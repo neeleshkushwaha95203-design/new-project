@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/compile.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="slider-main">
+<div class="slider-in"><img src="img/full-slider-1.jpg" alt="">
+<div class="modren-box-main">
+<h2>MODERN & SPACIOUS ROOMS </h2>
+<p>Enjoy your holidays at the Hotel Zante</p>
+
+
+</div>
+
+</div>
+<div class="slider-in"><img src="img/full-slider-2.jpg" alt="">
+<div class="modren-box-main">
+<h2>MODERN & SPACIOUS ROOMS </h2>
+<p>Enjoy your holidays at the Hotel Zante</p>
+
+
+</div>
+</div>
+<div class="slider-in"><img src="img/full-slider-3.jpg" alt="">
+<div class="modren-box-main">
+<h2>MODERN & SPACIOUS ROOMS </h2>
+<p>Enjoy your holidays at the Hotel Zante</p>
+
+
+</div>
+</div>
+
+</div>
+
+<div class="main-header">
+ <div class="main-header-logo"><a href="#"><img src="img/logo-white.svg" alt="" class="logo-white">    <img src="img/logoblack.svg" alt="" class="logo-black hide"></a>   </div> 
+ <div class="main-header-menu">
+<ul>
+<li><a href="#">HOME <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+<div class="boxn1">
+<ul>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+</ul>
+</div>
+
+</li>
+<li><a href="#">BRANCHES  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+<div class="boxn1">
+<ul>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">ROOMS <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+<div class="boxn1">
+<ul>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">PAGES <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+<div class="boxn1">
+<ul>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+<li><a href="#">Home1</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ul>
+ </div>
+
+<a href="#" class="book"><i class="fa fa-calendar icon" aria-hidden="true"></i>BOOK ONLINE</a>
+ 
+</div>
+
+
+<div class="chack-main-box">
+<a href="#"><li class="chack-main-box-in"><p>Check In → Check Out</p></li></a>
+<a href="#"><li class="chack-main-box-in"><p>Guests 1</p></li></a>
+<a href="#"><li class="chack-main-box-in  fill"><p>CHECK AVAILABILITY</p></li></a>
+</div>
+
+
+<div class="benner2">
+<div class="container">
+<div class="benner2-in">
+<div class="benner2-in-text">
+<h3>HOTEL ZANTE SINCE 1992</h3>
+<p class="high">High quality accommodation services</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+<p class="nam">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+
+</div>
+<div class="benner2-in-image">
+<div class="side-left"></div>
+<div class="side-right"></div>
+<div class="benner2-in-image-in">
+<div class="pull-image1"><img src="img/about2.jpg" alt=""></div>
+<div class="pull-image2"><img src="img/about1.jpg" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+$('.slider-main').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+ autoplay:true,
+ arrow:false,
+
+});
+});
+
+</script>
+
+<script>
+    $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > 10){
+        $('.main-header').addClass( "scrollup");
+        $('.logo-white').hide();
+        $('.logo-black').show();
+    }
+      else{
+            $('.main-header').removeClass( "scrollup");
+             $('.logo-white').show();
+            $('.logo-black').hide();    
+        }
+ });
+});
+</script>
+</body>
+</html>
